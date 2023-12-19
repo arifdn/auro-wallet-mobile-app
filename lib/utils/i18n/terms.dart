@@ -51,6 +51,55 @@ class TermsZH extends StatelessWidget {
   }
 }
 
+class TermsTR extends StatelessWidget {
+  TermsEN({required this.termsUrl,required this.privacyUrl});
+  final String termsUrl;
+  final String privacyUrl;
+
+  @override
+  Widget build(BuildContext context) {
+    var theme = Theme.of(context).textTheme;
+    var normalStyle = theme.headline5!.copyWith(
+        color: ColorsUtil.hexColor(0x666666)
+    );
+    return new RichText(
+      textScaleFactor: MediaQuery.of(context).textScaleFactor,
+      text: TextSpan(
+          children: [
+            new TextSpan(
+              text: 'Auro Wallet tarafından sağlanan hizmetleri kullanmak için Koşullar, Şartları ve Gizlilik Politikasını dikkatlice okumanız ve tam olarak anlamanız gerekir. \n\nOkuyabilirsin ',
+              style: normalStyle,
+            ),
+            new TextSpan(
+              text: 'Şartlar ve Koşullar',
+              style: theme.headline5!.copyWith(color: Theme.of(context).primaryColor),
+              recognizer: new TapGestureRecognizer()
+                ..onTap = () {
+                  launch(termsUrl);
+                },
+            ),
+            new TextSpan(
+              text: ' ve ',
+              style: normalStyle,
+            ),
+            new TextSpan(
+              text: 'Gizlilik Politikası',
+              style: theme.headline5!.copyWith(color: Theme.of(context).primaryColor),
+              recognizer: new TapGestureRecognizer()
+                ..onTap = () {
+                  launch(termsUrl);
+                },
+            ),
+            new TextSpan(
+              text: ' detayları öğrenmek için. Kabul ediyorsanız, cüzdan hizmetini kullanmaya başlamak için lütfen [Kabul Ediyorum] öğesine tıklayın.',
+              style: normalStyle,
+            ),
+          ]
+      ),
+    );
+  }
+}
+
 class TermsEN extends StatelessWidget {
   TermsEN({required this.termsUrl,required this.privacyUrl});
   final String termsUrl;
