@@ -13,7 +13,7 @@ class AppLocalizationsDelegate extends LocalizationsDelegate<I18n> {
   final Locale overriddenLocale;
 
   @override
-  bool isSupported(Locale locale) => ['en', 'zh'].contains(locale.languageCode);
+  bool isSupported(Locale locale) => ['en', 'zh', 'tr'].contains(locale.languageCode);
 
   @override
   Future<I18n> load(Locale locale) {
@@ -37,6 +37,8 @@ class I18n {
     switch (localeCode) {
       case 'zh':
         return '中文（简体）';
+      case 'tr':
+        return 'Türkçe';
       default:
         return 'English';
     }
@@ -56,6 +58,13 @@ class I18n {
       'settings': zhSettings,
       'staking': zhStaking,
       'ledger': zhLedger,
+    },
+    'tr': {
+      'main': trMain,
+      'home': trHome,
+      'settings': trSettings,
+      'staking': trStaking,
+      'ledger': trLedger,
     },
   };
 
