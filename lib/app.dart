@@ -96,6 +96,9 @@ class _WalletAppState extends State<WalletApp> {
       case 'zh':
         res = const Locale('zh', '');
         break;
+      case 'tr':
+        res = const Locale('tr', '');
+        break;
       case 'en':
         res = const Locale('en', '');
         break;
@@ -141,6 +144,7 @@ class _WalletAppState extends State<WalletApp> {
       supportedLocales: [
         const Locale('en', ''),
         const Locale('zh', ''),
+        const Locale('tr', ''),
       ],
       initialRoute: HomePage.route,
       theme: _theme,
