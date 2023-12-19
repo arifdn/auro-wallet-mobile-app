@@ -10,6 +10,18 @@ const Map<String, String> zhSettings = {
   "nodeAlert": "请务必只添加受您信任的节点。使用未知节点会有一定风险。",
   "invalidContact": "地址格式错误"
 };
+const Map<String, String> trSettings = {
+  "github": "Github‘a göz atın",
+  "noAddress": "Adres Yok",
+  'addaddress': 'Adres Ekle',
+  'editaddress': 'Adres Düzenle',
+  'deleteaddress': 'Adres Silinsin Mi?',
+  "addNetWork": "Ağ Ekle",
+  "editNetWork": "Ağı Düzenle",
+  "nodeAddress": "Düğüm URL",
+  "nodeAlert": "Yalnızca güvendiğiniz özel düğümleri ekleyin. Bilinmeyen düğümleri kullanmak riskli olabilir.",
+  "invalidContact": "Geçersiz adres"
+};
 const Map<String, String> enSettings = {
   "github": "Check it out on Github",
   "noAddress": "No Address",
