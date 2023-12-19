@@ -24,6 +24,32 @@ const Map<String, String> enLedger = {
   "ledgerSupport":"(<lightred>Only support Ledger Nano X</lightred>)"
 };
 
+const Map<String, String> trLedger = {
+  "ledgerTip1": "Ledger‘i telefona bağlayın.",
+  "ledgerTip2":
+      "<bold>Mina hazır</bold> ifadesini görene kadar Ledger cihazınızda Mina uygulamasını açın.",
+  "ledgerTip3": "Auro Wallet ile kullanmak istediğiniz donanım cüzdanını seçin.",
+  "connectLedger": "Donanım Cüzdanını Bağlayın",
+  "selectHdPath": "DC Yolunu Seçin",
+  "ledgerStatus": "Ledger Durumu",
+  "ledgerAddressTip1":
+      "Lütfen işleminize Ledger donanım cüzdanınındaki uyarıları takip ederek devam edin.",
+  "ledgerAddressTip2": "Adres Al > Oluştur > Onayla",
+  "ledgerAddressTip3":
+      "<lightred>Bu pencereyi kapatmayın.</lightred> Ledger tamamlandığında sayfa otomatik olarak yönlendirilecektir.",
+  "waitingLedger": "Onay bekliyor...",
+  "waitingLedgerSign":
+      "Lütfen Ledger donanım cüzdanından onaylayın, imzanın atılması 1-3 dakika sürebilir.",
+  "waitingNotClose": "O zamana kadar bu pencereyi kapatmayın.",
+  "openMinaApp":
+      "Ledger cihazı bağlı ancak Mina uygulaması açık değil. Lütfen Mina uygulamasını Ledger‘da açın.",
+  "unlockLedger":
+      "Bağlantı hatası. Lütfen Ledger cihazınızın kilidinin açık olduğundan emin olun.",
+  "ledgerReject": "Ledger tarafından reddedildi",
+  "ledgerSearching": "Aranıyor...",
+  "ledgerSupport":"(<lightred>Sadece Ledger Nano X destekleniyor</lightred>)"
+};
+
 const Map<String, String> zhLedger = {
   "ledgerTip1": "将 Ledger与手机连接。",
   "ledgerTip2": "在 Ledger 中打开 Mina 应用，直到看到 <bold>Mina is ready</bold>。",
