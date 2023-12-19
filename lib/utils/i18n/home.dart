@@ -6,6 +6,14 @@ const Map<String, String> zhHome = {
   "renameAccountName": "更改账户名",
 };
 
+const Map<String, String> trHome = {
+  "myWallet": "Cüzdanım",
+  "send": "Gönder",
+  "receive": "Al",
+  "renameAccountName": "Hesap Adını Değiştir",
+  "accountNameLimit": "En fazla 16 karakter"
+};
+
 const Map<String, String> enHome = {
   "myWallet": "My Wallet",
   "send": "Send",
